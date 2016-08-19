@@ -5,7 +5,7 @@
 }
 
 .controlButtons{
-
+	-fx-background-color: transparent;
 }
 
 .taskBarIcon{
@@ -21,7 +21,7 @@
 
 .titleText{
       -fx-font-weight: bold;
-      -fx-text-fill: black;
+      -fx-text-fill: #FFFFFF;
 }
 
 .mdiWindow{
@@ -31,7 +31,7 @@
 }
 
 .mdiWindowTitleBar{
-        -fx-background-color: linear-gradient(to bottom, -fx-base, derive(#E9E9E9,10%),derive(#D0D0D0,10%),derive(#E9E9E9,10%));
+        -fx-background-color: #258FCC;
         -fx-border-color: transparent transparent #C4C4C4 transparent;
         -fx-background-radius: 0 0 0 0;
         -fx-border-radius: 0 0 0 0;

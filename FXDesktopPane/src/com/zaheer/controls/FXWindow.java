@@ -23,6 +23,8 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontWeight;
 import javafx.util.Duration;
 
 /**
@@ -229,6 +231,7 @@ public class FXWindow extends BorderPane {
 		ImageView imvLogo = imgLogo != null ? imgLogo : new ImageView();
 		lblTitle = new Label(title);
 		lblTitle.getStyleClass().add("titleText");
+		lblTitle.setFont(Font.font("Arial", FontWeight.NORMAL,15));
 		// lblTitle.setStyle("-fx-font-weight: bold;");
 		// lblTitle.styleProperty().bind(StylesCSS.taskBarIconTextStyleProperty);
 
@@ -244,6 +247,7 @@ public class FXWindow extends BorderPane {
 
 	private HBox makeControls(Node... nodes) {
 		HBox hbRight = new HBox();
+		hbRight.setSpacing(10);
 		hbRight.getChildren().addAll(nodes);
 		hbRight.setAlignment(Pos.CENTER_RIGHT);
 		AnchorPane.setBottomAnchor(hbRight, 0d);
